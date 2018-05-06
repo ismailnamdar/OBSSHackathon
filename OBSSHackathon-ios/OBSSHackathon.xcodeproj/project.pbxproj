@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E0F21E3DBADD1664E96DB40 /* Pods_OBSSHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A31CF63C6152393DC37A349 /* Pods_OBSSHackathon.framework */; };
+		795A1BBE42A209E9FDB3161F /* Pods_OBSSHackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80AA20609239A4A62A8A449 /* Pods_OBSSHackathonUITests.framework */; };
+		9CA23C619CF57D462A2958D4 /* Pods_OBSSHackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5E46880BD09F44CD825BE /* Pods_OBSSHackathonTests.framework */; };
+		ECACA887209DB85B0036F41E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA886209DB85B0036F41E /* AppDelegate.swift */; };
+		ECACA889209DB85B0036F41E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA888209DB85B0036F41E /* ViewController.swift */; };
+		ECACA88C209DB85B0036F41E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECACA88A209DB85B0036F41E /* Main.storyboard */; };
+		ECACA88F209DB85B0036F41E /* OBSSHackathon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECACA88D209DB85B0036F41E /* OBSSHackathon.xcdatamodeld */; };
+		ECACA891209DB85B0036F41E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECACA890209DB85B0036F41E /* Assets.xcassets */; };
+		ECACA894209DB85B0036F41E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECACA892209DB85B0036F41E /* LaunchScreen.storyboard */; };
+		ECACA89F209DB85B0036F41E /* OBSSHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA89E209DB85B0036F41E /* OBSSHackathonTests.swift */; };
+		ECACA8AA209DB85B0036F41E /* OBSSHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA8A9209DB85B0036F41E /* OBSSHackathonUITests.swift */; };
+		ECACA8B8209DB9960036F41E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECACA8B7209DB9960036F41E /* GoogleService-Info.plist */; };
+		ECACA8BD209DC03B0036F41E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA8BC209DC03B0036F41E /* DataService.swift */; };
+		ECACA8BF209DC4C30036F41E /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA8BE209DC4C30036F41E /* RoundedCornerView.swift */; };
+		ECACA8C1209DF51A0036F41E /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA8C0209DF51A0036F41E /* RoundedCornerButton.swift */; };
+		ECACA8C6209E3AEB0036F41E /* OmiseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECACA8C5209E3AEB0036F41E /* OmiseSDK.framework */; };
+		ECACA8C8209E85100036F41E /* TrainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACA8C7209E85100036F41E /* TrainVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECACA89B209DB85B0036F41E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECACA87B209DB85A0036F41E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECACA882209DB85A0036F41E;
+			remoteInfo = OBSSHackathon;
+		};
+		ECACA8A6209DB85B0036F41E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECACA87B209DB85A0036F41E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECACA882209DB85A0036F41E;
+			remoteInfo = OBSSHackathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A31CF63C6152393DC37A349 /* Pods_OBSSHackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBSSHackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B239C3387CE0553CC935A3 /* Pods-OBSSHackathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBSSHackathonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBSSHackathonUITests/Pods-OBSSHackathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EF5E46880BD09F44CD825BE /* Pods_OBSSHackathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBSSHackathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B7425AE0BEFF460A005F31 /* Pods-OBSSHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBSSHackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBSSHackathon/Pods-OBSSHackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		91626D97B3B7C81A5E61563B /* Pods-OBSSHackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBSSHackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBSSHackathon/Pods-OBSSHackathon.release.xcconfig"; sourceTree = "<group>"; };
+		A28AAD564DD86007D363948F /* Pods-OBSSHackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBSSHackathonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBSSHackathonUITests/Pods-OBSSHackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4EF56513866E3EC77496238 /* Pods-OBSSHackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBSSHackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBSSHackathonTests/Pods-OBSSHackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A98850E832BD63E7A697EC46 /* Pods-OBSSHackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBSSHackathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBSSHackathonTests/Pods-OBSSHackathonTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECACA883209DB85A0036F41E /* OBSSHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBSSHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECACA886209DB85B0036F41E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECACA888209DB85B0036F41E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECACA88B209DB85B0036F41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECACA88E209DB85B0036F41E /* OBSSHackathon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OBSSHackathon.xcdatamodel; sourceTree = "<group>"; };
+		ECACA890209DB85B0036F41E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECACA893209DB85B0036F41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECACA895209DB85B0036F41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECACA89A209DB85B0036F41E /* OBSSHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBSSHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECACA89E209DB85B0036F41E /* OBSSHackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBSSHackathonTests.swift; sourceTree = "<group>"; };
+		ECACA8A0209DB85B0036F41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECACA8A5209DB85B0036F41E /* OBSSHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBSSHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECACA8A9209DB85B0036F41E /* OBSSHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBSSHackathonUITests.swift; sourceTree = "<group>"; };
+		ECACA8AB209DB85B0036F41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECACA8B7209DB9960036F41E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECACA8BC209DC03B0036F41E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		ECACA8BE209DC4C30036F41E /* RoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		ECACA8C0209DF51A0036F41E /* RoundedCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
+		ECACA8C5209E3AEB0036F41E /* OmiseSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmiseSDK.framework; path = Carthage/Build/iOS/OmiseSDK.framework; sourceTree = "<group>"; };
+		ECACA8C7209E85100036F41E /* TrainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainVC.swift; sourceTree = "<group>"; };
+		F80AA20609239A4A62A8A449 /* Pods_OBSSHackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBSSHackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECACA880209DB85A0036F41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0F21E3DBADD1664E96DB40 /* Pods_OBSSHackathon.framework in Frameworks */,
+				ECACA8C6209E3AEB0036F41E /* OmiseSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECACA897209DB85B0036F41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA23C619CF57D462A2958D4 /* Pods_OBSSHackathonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECACA8A2209DB85B0036F41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795A1BBE42A209E9FDB3161F /* Pods_OBSSHackathonUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504DCC284CF57A1101B44E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECACA8C5209E3AEB0036F41E /* OmiseSDK.framework */,
+				0A31CF63C6152393DC37A349 /* Pods_OBSSHackathon.framework */,
+				4EF5E46880BD09F44CD825BE /* Pods_OBSSHackathonTests.framework */,
+				F80AA20609239A4A62A8A449 /* Pods_OBSSHackathonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F85D9628D0DF857FA849DCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50B7425AE0BEFF460A005F31 /* Pods-OBSSHackathon.debug.xcconfig */,
+				91626D97B3B7C81A5E61563B /* Pods-OBSSHackathon.release.xcconfig */,
+				A4EF56513866E3EC77496238 /* Pods-OBSSHackathonTests.debug.xcconfig */,
+				A98850E832BD63E7A697EC46 /* Pods-OBSSHackathonTests.release.xcconfig */,
+				20B239C3387CE0553CC935A3 /* Pods-OBSSHackathonUITests.debug.xcconfig */,
+				A28AAD564DD86007D363948F /* Pods-OBSSHackathonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECACA87A209DB85A0036F41E = {
+			isa = PBXGroup;
+			children = (
+				ECACA885209DB85B0036F41E /* OBSSHackathon */,
+				ECACA89D209DB85B0036F41E /* OBSSHackathonTests */,
+				ECACA8A8209DB85B0036F41E /* OBSSHackathonUITests */,
+				ECACA884209DB85B0036F41E /* Products */,
+				5F85D9628D0DF857FA849DCA /* Pods */,
+				504DCC284CF57A1101B44E6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECACA884209DB85B0036F41E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECACA883209DB85A0036F41E /* OBSSHackathon.app */,
+				ECACA89A209DB85B0036F41E /* OBSSHackathonTests.xctest */,
+				ECACA8A5209DB85B0036F41E /* OBSSHackathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECACA885209DB85B0036F41E /* OBSSHackathon */ = {
+			isa = PBXGroup;
+			children = (
+				ECACA8BB209DC02B0036F41E /* Controller */,
+				ECACA8BA209DC0270036F41E /* View */,
+				ECACA8B9209DC01B0036F41E /* Model */,
+				ECACA8B7209DB9960036F41E /* GoogleService-Info.plist */,
+				ECACA886209DB85B0036F41E /* AppDelegate.swift */,
+				ECACA88A209DB85B0036F41E /* Main.storyboard */,
+				ECACA890209DB85B0036F41E /* Assets.xcassets */,
+				ECACA892209DB85B0036F41E /* LaunchScreen.storyboard */,
+				ECACA895209DB85B0036F41E /* Info.plist */,
+				ECACA88D209DB85B0036F41E /* OBSSHackathon.xcdatamodeld */,
+				ECACA8BC209DC03B0036F41E /* DataService.swift */,
+			);
+			path = OBSSHackathon;
+			sourceTree = "<group>";
+		};
+		ECACA89D209DB85B0036F41E /* OBSSHackathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECACA89E209DB85B0036F41E /* OBSSHackathonTests.swift */,
+				ECACA8A0209DB85B0036F41E /* Info.plist */,
+			);
+			path = OBSSHackathonTests;
+			sourceTree = "<group>";
+		};
+		ECACA8A8209DB85B0036F41E /* OBSSHackathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECACA8A9209DB85B0036F41E /* OBSSHackathonUITests.swift */,
+				ECACA8AB209DB85B0036F41E /* Info.plist */,
+			);
+			path = OBSSHackathonUITests;
+			sourceTree = "<group>";
+		};
+		ECACA8B9209DC01B0036F41E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ECACA8BA209DC0270036F41E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECACA8BE209DC4C30036F41E /* RoundedCornerView.swift */,
+				ECACA8C0209DF51A0036F41E /* RoundedCornerButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ECACA8BB209DC02B0036F41E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECACA888209DB85B0036F41E /* ViewController.swift */,
+				ECACA8C7209E85100036F41E /* TrainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECACA882209DB85A0036F41E /* OBSSHackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECACA8AE209DB85B0036F41E /* Build configuration list for PBXNativeTarget "OBSSHackathon" */;
+			buildPhases = (
+				CAFEDC957D0DCC24700E3CB4 /* [CP] Check Pods Manifest.lock */,
+				ECACA87F209DB85A0036F41E /* Sources */,
+				ECACA880209DB85A0036F41E /* Frameworks */,
+				ECACA881209DB85A0036F41E /* Resources */,
+				C2AAF82EA8010C8F8AB18507 /* [CP] Embed Pods Frameworks */,
+				DC0633560BDD2C03B52349F0 /* [CP] Copy Pods Resources */,
+				ECACA8C4209E2D2C0036F41E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBSSHackathon;
+			productName = OBSSHackathon;
+			productReference = ECACA883209DB85A0036F41E /* OBSSHackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECACA899209DB85B0036F41E /* OBSSHackathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECACA8B1209DB85B0036F41E /* Build configuration list for PBXNativeTarget "OBSSHackathonTests" */;
+			buildPhases = (
+				CB02FDD7029064B6C986D288 /* [CP] Check Pods Manifest.lock */,
+				ECACA896209DB85B0036F41E /* Sources */,
+				ECACA897209DB85B0036F41E /* Frameworks */,
+				ECACA898209DB85B0036F41E /* Resources */,
+				95265632A24B1CA6BB8D45DB /* [CP] Embed Pods Frameworks */,
+				469B83F0C57A0EBAA5496386 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECACA89C209DB85B0036F41E /* PBXTargetDependency */,
+			);
+			name = OBSSHackathonTests;
+			productName = OBSSHackathonTests;
+			productReference = ECACA89A209DB85B0036F41E /* OBSSHackathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECACA8A4209DB85B0036F41E /* OBSSHackathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECACA8B4209DB85B0036F41E /* Build configuration list for PBXNativeTarget "OBSSHackathonUITests" */;
+			buildPhases = (
+				C11D590A890630B1BE10BCC5 /* [CP] Check Pods Manifest.lock */,
+				ECACA8A1209DB85B0036F41E /* Sources */,
+				ECACA8A2209DB85B0036F41E /* Frameworks */,
+				ECACA8A3209DB85B0036F41E /* Resources */,
+				9E34D50BF3E662DDAF52C8F6 /* [CP] Embed Pods Frameworks */,
+				B24F8163A61BFB4F0D336543 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECACA8A7209DB85B0036F41E /* PBXTargetDependency */,
+			);
+			name = OBSSHackathonUITests;
+			productName = OBSSHackathonUITests;
+			productReference = ECACA8A5209DB85B0036F41E /* OBSSHackathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECACA87B209DB85A0036F41E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = teqwise;
+				TargetAttributes = {
+					ECACA882209DB85A0036F41E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6KFG398S6;
+						ProvisioningStyle = Automatic;
+					};
+					ECACA899209DB85B0036F41E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6KFG398S6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ECACA882209DB85A0036F41E;
+					};
+					ECACA8A4209DB85B0036F41E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V6KFG398S6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ECACA882209DB85A0036F41E;
+					};
+				};
+			};
+			buildConfigurationList = ECACA87E209DB85A0036F41E /* Build configuration list for PBXProject "OBSSHackathon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECACA87A209DB85A0036F41E;
+			productRefGroup = ECACA884209DB85B0036F41E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECACA882209DB85A0036F41E /* OBSSHackathon */,
+				ECACA899209DB85B0036F41E /* OBSSHackathonTests */,
+				ECACA8A4209DB85B0036F41E /* OBSSHackathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECACA881209DB85A0036F41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECACA894209DB85B0036F41E /* LaunchScreen.storyboard in Resources */,
+				ECACA891209DB85B0036F41E /* Assets.xcassets in Resources */,
+				ECACA8B8209DB9960036F41E /* GoogleService-Info.plist in Resources */,
+				ECACA88C209DB85B0036F41E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECACA898209DB85B0036F41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECACA8A3209DB85B0036F41E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		469B83F0C57A0EBAA5496386 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBSSHackathonTests/Pods-OBSSHackathonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95265632A24B1CA6BB8D45DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBSSHackathonTests/Pods-OBSSHackathonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E34D50BF3E662DDAF52C8F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBSSHackathonUITests/Pods-OBSSHackathonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24F8163A61BFB4F0D336543 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBSSHackathonUITests/Pods-OBSSHackathonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C11D590A890630B1BE10BCC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AAF82EA8010C8F8AB18507 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBSSHackathon/Pods-OBSSHackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAFEDC957D0DCC24700E3CB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB02FDD7029064B6C986D288 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0633560BDD2C03B52349F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBSSHackathon/Pods-OBSSHackathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECACA8C4209E2D2C0036F41E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OmiseSDK.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECACA87F209DB85A0036F41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECACA8C8209E85100036F41E /* TrainVC.swift in Sources */,
+				ECACA8C1209DF51A0036F41E /* RoundedCornerButton.swift in Sources */,
+				ECACA8BF209DC4C30036F41E /* RoundedCornerView.swift in Sources */,
+				ECACA889209DB85B0036F41E /* ViewController.swift in Sources */,
+				ECACA887209DB85B0036F41E /* AppDelegate.swift in Sources */,
+				ECACA88F209DB85B0036F41E /* OBSSHackathon.xcdatamodeld in Sources */,
+				ECACA8BD209DC03B0036F41E /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECACA896209DB85B0036F41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECACA89F209DB85B0036F41E /* OBSSHackathonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECACA8A1209DB85B0036F41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECACA8AA209DB85B0036F41E /* OBSSHackathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECACA89C209DB85B0036F41E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECACA882209DB85A0036F41E /* OBSSHackathon */;
+			targetProxy = ECACA89B209DB85B0036F41E /* PBXContainerItemProxy */;
+		};
+		ECACA8A7209DB85B0036F41E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECACA882209DB85A0036F41E /* OBSSHackathon */;
+			targetProxy = ECACA8A6209DB85B0036F41E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECACA88A209DB85B0036F41E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECACA88B209DB85B0036F41E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECACA892209DB85B0036F41E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECACA893209DB85B0036F41E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECACA8AC209DB85B0036F41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECACA8AD209DB85B0036F41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECACA8AF209DB85B0036F41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50B7425AE0BEFF460A005F31 /* Pods-OBSSHackathon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6KFG398S6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OBSSHackathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teqwise.OBSSHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ECACA8B0209DB85B0036F41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91626D97B3B7C81A5E61563B /* Pods-OBSSHackathon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6KFG398S6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OBSSHackathon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teqwise.OBSSHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ECACA8B2209DB85B0036F41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EF56513866E3EC77496238 /* Pods-OBSSHackathonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V6KFG398S6;
+				INFOPLIST_FILE = OBSSHackathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teqwise.OBSSHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OBSSHackathon.app/OBSSHackathon";
+			};
+			name = Debug;
+		};
+		ECACA8B3209DB85B0036F41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98850E832BD63E7A697EC46 /* Pods-OBSSHackathonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V6KFG398S6;
+				INFOPLIST_FILE = OBSSHackathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teqwise.OBSSHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OBSSHackathon.app/OBSSHackathon";
+			};
+			name = Release;
+		};
+		ECACA8B5209DB85B0036F41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20B239C3387CE0553CC935A3 /* Pods-OBSSHackathonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V6KFG398S6;
+				INFOPLIST_FILE = OBSSHackathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teqwise.OBSSHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OBSSHackathon;
+			};
+			name = Debug;
+		};
+		ECACA8B6209DB85B0036F41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A28AAD564DD86007D363948F /* Pods-OBSSHackathonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V6KFG398S6;
+				INFOPLIST_FILE = OBSSHackathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teqwise.OBSSHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = OBSSHackathon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECACA87E209DB85A0036F41E /* Build configuration list for PBXProject "OBSSHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECACA8AC209DB85B0036F41E /* Debug */,
+				ECACA8AD209DB85B0036F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECACA8AE209DB85B0036F41E /* Build configuration list for PBXNativeTarget "OBSSHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECACA8AF209DB85B0036F41E /* Debug */,
+				ECACA8B0209DB85B0036F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECACA8B1209DB85B0036F41E /* Build configuration list for PBXNativeTarget "OBSSHackathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECACA8B2209DB85B0036F41E /* Debug */,
+				ECACA8B3209DB85B0036F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECACA8B4209DB85B0036F41E /* Build configuration list for PBXNativeTarget "OBSSHackathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECACA8B5209DB85B0036F41E /* Debug */,
+				ECACA8B6209DB85B0036F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECACA88D209DB85B0036F41E /* OBSSHackathon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECACA88E209DB85B0036F41E /* OBSSHackathon.xcdatamodel */,
+			);
+			currentVersion = ECACA88E209DB85B0036F41E /* OBSSHackathon.xcdatamodel */;
+			path = OBSSHackathon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECACA87B209DB85A0036F41E /* Project object */;
+}
