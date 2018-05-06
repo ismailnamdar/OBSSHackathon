@@ -3,3 +3,5 @@ __pycache__
 /.idea/workspace.xml
 data
 models
+triplet_data
+*.npy

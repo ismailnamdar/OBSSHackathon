@@ -2,13 +2,12 @@ import os
 import numpy as np
 import cv2
 
-import keras
 from keras.models import Sequential, load_model, Model
 from keras.layers import Input, Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization, Activation
 from keras.preprocessing.image import ImageDataGenerator
 from keras.utils import to_categorical
-from keras.callbacks import EarlyStopping, ModelCheckpoint, TensorBoard
+from keras.callbacks import EarlyStopping, ModelCheckpoint, TensorBoard, CSVLogger
 from keras.applications.vgg16 import VGG16
 from keras.optimizers import SGD
 
@@ -50,16 +49,26 @@ def load_data():
     return x_data, y_data
 
 
-def build_model():
+def train_model():
     model_vgg = VGG16(include_top=False, weights='imagenet', input_shape=(150, 150, 3))
 
     top_model = Sequential()
     top_model.add(Flatten(input_shape=model_vgg.output_shape[1:]))
-    top_model.add(Dense(512, activation='relu'))
+    top_model.add(Dense(256))
+    top_model.add(Activation('relu'))
     top_model.add(Dropout(0.5))
-    top_model.add(Dense(n_classes, activation='softmax'))
 
-    model = Model(inputs=model_vgg.input, outputs=top_model(model_vgg.output))
+    top_model.add(Dense(256))
+
+    features = top_model(model_vgg.output)
+
+    extractor = Model(inputs=model_vgg.input, outputs=features)
+
+    last = Activation('relu')(features)
+    last = Dropout(0.5)(last)
+    last = Dense(n_classes, activation='softmax')(last)
+
+    model = Model(inputs=model_vgg.input, outputs=last)
 
     for layer in model.layers[:15]:
         layer.trainable = False
@@ -67,28 +76,29 @@ def build_model():
     model.compile(loss='categorical_crossentropy',
                   optimizer=SGD(lr=1e-4, momentum=0.9),
                   metrics=['accuracy'])
-    return model
 
-
-def train(model, train_generator):
-    checkpointer = ModelCheckpoint(filepath='./models/main_model.h5', monitor='val_loss', verbose=1, save_best_only=True)
+    checkpointer = ModelCheckpoint(filepath='./models/conv_model.h5', monitor='val_loss', verbose=1,
+                                   save_best_only=True)
     early_stopping = EarlyStopping(monitor='val_loss', verbose=1, patience=5)
-    tensorboard = TensorBoard(log_dir='./logs', histogram_freq=0, batch_size=batch_size, write_graph=True, write_images=True)
+    tensorboard = TensorBoard(log_dir='./logs', histogram_freq=0, batch_size=batch_size, write_graph=True,
+                              write_images=True)
+    csv_logger = CSVLogger('training_vector.log')
 
     model.fit_generator(train_generator,
-                        steps_per_epoch=train_samples//batch_size,
+                        steps_per_epoch=train_samples // batch_size,
                         epochs=epochs,
                         validation_data=valid_generator,
-                        validation_steps=validation_samples//batch_size,
-                        callbacks=[checkpointer, tensorboard, early_stopping])
+                        validation_steps=validation_samples // batch_size,
+                        callbacks=[checkpointer, tensorboard, early_stopping, csv_logger])
+    return extractor
 
 
 def main():
     if not os.path.exists('models'):
         os.mkdir('models')
 
-    model = build_model()
-    train(model, train_generator)
+    model = train_model()
+    model.save('./models/model.h5')
 
 
 if __name__ == '__main__':
